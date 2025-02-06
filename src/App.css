@@ -36,3 +36,152 @@
     transform: rotate(360deg);
   }
 }
+
+/***********************************/
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #cde15b, #5f7c3a);
+  margin: 0;
+  padding: 0;
+}
+
+/* Login */
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 30%;
+  background: linear-gradient(to right, #FFFFFF 0%, #CBE949 100%);
+  /* padding: 20px; */
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: green;
+  color: white;
+}
+
+.user-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  background: white;
+  right: 0;
+  top: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #b0cc54;
+  height: 100vh;
+  padding: 10px;
+  position: absolute;
+  left: -250px;
+  transition: 0.3s;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submenu {
+  padding-left: 20px;
+}
+
+/* Tabla */
+.dashboard {
+  padding: 20px;
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/*************** Login Styles ***************/
+
+.p-login-title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 20px;
+}
+
+.form-login-style {
+  width: 90%;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-inputs {
+  width: 80%;
+  height: 15%;
+  border-radius: 5px;
+  border: 0.5px #477A00 solid;
+  outline: none
+}
+
+.login-button {
+  width: 30%;
+  height: 15%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #477A00;
+}
+
+
+
