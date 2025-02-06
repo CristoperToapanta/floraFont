@@ -13,7 +13,8 @@ function LoginScreen({ onLogin }) {
 
     const users = [
         { username: "admin", password: "admin123" },
-        { username: "user", password: "user123" }
+        { username: "user", password: "user123" },
+        { username: "proveedor", password: "proveedor123" },
     ];
 
 

@@ -87,7 +87,7 @@ button {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background: green;
+  background: linear-gradient(160deg, #C0CB25 30%, #477A00 70%);
   color: white;
 }
 
@@ -108,11 +108,12 @@ button {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background: #b0cc54;
+  background: linear-gradient(to bottom, #C0CB25 0%, #477A00 68%);
   height: 100vh;
-  padding: 10px;
-  position: absolute;
+  /* padding: 10px; */
+  position: relative;
   left: -250px;
+  top: -16px;
   transition: 0.3s;
 }
 
@@ -123,10 +124,6 @@ button {
 ul {
   list-style: none;
   padding: 0;
-}
-
-.submenu {
-  padding-left: 20px;
 }
 
 /* Tabla */
@@ -183,5 +180,93 @@ th, td {
   background-color: #477A00;
 }
 
+.menu-btn {
+  background: linear-gradient(160deg, #C0CB25 100%, #477A00 0%);
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
 
+.sidebar-btn {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(160deg, #ffffff 0%, #cbe949 92%);
+  width: 100%;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar-btn:hover {
+  background: linear-gradient(160deg, #ffffff 0%, #b0d635 92%);
+}
+
+
+.submenu {
+  background: linear-gradient(#f6ffcc 0%, #e7ff80 92%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Clase activa cuando el submenú se expande */
+.submenu-open {
+  max-height: 150px; /* Ajusta según el contenido */
+  opacity: 1;
+}
+
+/* Clase cuando está cerrado */
+.submenu-closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.sidebar-subtn {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(#FFFFFF 0%, #E4E4E4 100%);
+  width: 100%;
+  height: 50px;
+  /* border-radius: 5px; */
+  align-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.sidebar-title {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-left: 20px;
+  
+}
+
+.sidebar-subtitle {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-left: 20px;
+  
+}
+
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header-title{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-right: 20px;
+}
 

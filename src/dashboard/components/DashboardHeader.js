@@ -7,12 +7,14 @@ function DashboardHeader({ toggleSidebar }) {
 
     return (
         <header className="header">
-            <button className="menu-btn" onClick={toggleSidebar}>☰</button>
+            <button className="menu-btn" onClick={toggleSidebar}> Menu </button>
             <div className="user-menu">
-                <span onClick={() => setShowDropdown(!showDropdown)}>Ale Flowers ⚫</span>
+                <span onClick={() => setShowDropdown(!showDropdown)}>
+                    <p className='header-title'>Ale Flowers</p> 
+                </span>
                 {showDropdown && (
                     <div className="dropdown">
-                        <p>Profile</p>
+                        <p>Perfil</p>
                         <p>Settings</p>
                         <p>Log Out</p>
                     </div>
