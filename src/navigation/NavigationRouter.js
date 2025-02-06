@@ -9,6 +9,7 @@ export default function NavigationRouter() {
   return (
     <Routes>
       <Route path="/" element={<LoginScreen />} />
+      <Route path="/register" element={<LoginScreen />} />
       <Route path="/dashboard" element={<DashboardScreen />} />
     </Routes>
   );
