@@ -21,6 +21,9 @@ function LoginScreen({ onLogin }) {
 
         e.preventDefault();
 
+        console.log(username)
+        console.log(password)
+
         const userFound = users.find(
             (user) => user.username === username && user.password === password
         );

@@ -42,13 +42,13 @@
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #cde15b, #5f7c3a);
   margin: 0;
   padding: 0;
 }
 
 /* Login */
 .login-container {
+  background: linear-gradient(to bottom, #cde15b, #5f7c3a);
   display: flex;
   height: 100vh;
   justify-content: center;
