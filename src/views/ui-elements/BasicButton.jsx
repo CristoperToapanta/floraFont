@@ -29,19 +29,7 @@ const BasicButton = () => {
     </OverlayTrigger>
   ));
 
-  const outlineButtons = buttonVariants.map((variant, idx) => (
-    <OverlayTrigger key={idx} placement="top" overlay={<Tooltip className="mb-2">{'outline-' + variant}</Tooltip>}>
-      <Button variant={'outline-' + variant} style={{ color: variant === 'light' ? 'black' : '' }} className="text-capitalize mx-2">
-        {variant}
-      </Button>
-    </OverlayTrigger>
-  ));
 
-  const disabledButtons = buttonVariants.map((variant, idx) => (
-    <Button key={idx} disabled variant={variant} className="text-capitalize mx-2">
-      {variant}
-    </Button>
-  ));
 
   const iconButtons = buttonOptions.map((button, idx) => (
     <Button key={idx} variant={button.variant} className="text-capitalize mx-2">
@@ -50,12 +38,6 @@ const BasicButton = () => {
     </Button>
   ));
 
-  const outlineIconButtons = buttonOptions.map((button, idx) => (
-    <Button key={idx} variant={'outline-' + button.variant} className="text-capitalize mx-2">
-      <i className={button.icon} />
-      {button.variant}
-    </Button>
-  ));
 
   const onlyIconButtons = buttonOptions.map((button, idx) => (
     <Button className="btn-icon" key={idx} variant={button.variant}>
@@ -63,11 +45,7 @@ const BasicButton = () => {
     </Button>
   ));
 
-  const onlyOutlineIconButtons = buttonOptions.map((button, idx) => (
-    <Button className="btn-icon" key={idx} variant={'outline-' + button.variant}>
-      <i className={button.icon} />
-    </Button>
-  ));
+
 
   return (
     <React.Fragment>
@@ -92,35 +70,15 @@ const BasicButton = () => {
       </Row>
       <Row className="btn-page">
 
-        <Col md={6}>
-          <Card title="Radio Button">
-            <ButtonToolbar>
-              <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
-                <ToggleButton variant="secondary" value={1}>
-                  Active
-                </ToggleButton>
-                <ToggleButton variant="secondary" value={2}>
-                  Radio
-                </ToggleButton>
-                <ToggleButton variant="secondary" value={3}>
-                  Radio
-                </ToggleButton>
-              </ToggleButtonGroup>
-            </ButtonToolbar>
-          </Card>
-        </Col>
+
         <Col md={6}>
           <Card title="Button With Icon">{iconButtons}</Card>
         </Col>
-        <Col md={6}>
-          <Card title="Outline Icon Buttons">{outlineIconButtons}</Card>
-        </Col>
+
         <Col md={6}>
           <Card title="Only Icon">{onlyIconButtons}</Card>
         </Col>
-        <Col md={6}>
-          <Card title="Outline Icon">{onlyOutlineIconButtons}</Card>
-        </Col>
+
       </Row>
     </React.Fragment>
   );
