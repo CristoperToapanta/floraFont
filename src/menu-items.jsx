@@ -58,12 +58,6 @@ const menuItems = {
               title: 'Typography',
               type: 'item',
               url: '/basic/typography'
-            },
-            {
-              id: 'tooltip-popovers',
-              title: 'Tooltip & Popovers',
-              type: 'item',
-              url: '/basic/tooltip-popovers'
             }
           ]
         }

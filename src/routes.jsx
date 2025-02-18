@@ -87,11 +87,6 @@ export const routes = [
       },
       {
         exact: 'true',
-        path: '/basic/tooltip-popovers',
-        element: lazy(() => import('./views/ui-elements/BasicTooltipsPopovers'))
-      },
-      {
-        exact: 'true',
         path: '/sample-page',
         element: lazy(() => import('./views/extra/SamplePage'))
       },
